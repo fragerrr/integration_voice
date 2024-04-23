@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: integration-yandex
+
+yandex:
+  url: https://yandex.cloud/api/speechkit/tts
