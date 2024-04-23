@@ -13,10 +13,10 @@ import java.util.Base64;
 @RequiredArgsConstructor
 public class YandexAccessImpl implements YandexAccess {
     private final RestTemplate restTemplate;
-
+    private final YandexProperties yandexProperties;
     @Override
     public String getSpeech(YandexAccessRequest accessRequest) {
-        var audioData = restTemplate.postForObject("https://yandex.cloud/api/speechkit/tts", accessRequest, byte[].class);
+        var audioData = restTemplate.postForObject(yandexProperties.getUrl(), accessRequest, byte[].class);
 
         return Base64.getEncoder().encodeToString(audioData);
     }
