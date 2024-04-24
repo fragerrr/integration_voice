@@ -3,15 +3,11 @@ package kz.diploma.integration.yandex.service.impl;
 import kz.diploma.integration.yandex.access.YandexAccess;
 import kz.diploma.integration.yandex.access.request.YandexAccessRequest;
 import kz.diploma.integration.yandex.model.request.YandexRequest;
-import kz.diploma.integration.yandex.model.request.enums.LanguageEnum;
-import kz.diploma.integration.yandex.model.request.enums.SpeakerEnum;
 import kz.diploma.integration.yandex.model.response.FilterDataResponse;
 import kz.diploma.integration.yandex.service.YandexService;
 import kz.diploma.integration.yandex.util.YandexUtil;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-
-import static kz.diploma.integration.yandex.model.request.enums.SpeakerEnum.*;
 
 @Service
 @RequiredArgsConstructor
